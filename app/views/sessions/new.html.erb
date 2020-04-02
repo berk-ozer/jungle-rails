@@ -10,8 +10,13 @@
       <%= form_tag '/login' do %>
 
         <div class="form-group">
-          Email: <%= text_field_tag :email, class: 'form-control' %>
-          Password: <%= password_field_tag :password, class: 'form-control' %>
+          <%= label_tag :email%>
+          <%= text_field_tag :email, "", class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= label_tag :password%>
+          <%= password_field_tag :password, "", class: 'form-control' %>
         </div>
 
         <%= submit_tag 'Submit', class: 'btn btn-primary' %>
