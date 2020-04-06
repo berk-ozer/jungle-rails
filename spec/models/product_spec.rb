@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   
   let(:category) {
-    Category.new(name: "testCategory")
+    Category.create(name: "testCategory")
   }
   subject {
-    category.products.new(
+    category.products.create(
       name: "testProduct",
       description: "this is a test product",
       image: "testImage",
