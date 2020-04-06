@@ -8,8 +8,6 @@ RSpec.describe Product, type: :model do
   subject {
     category.products.create(
       name: "testProduct",
-      description: "this is a test product",
-      image: "testImage",
       price_cents: 995,
       quantity: 15,
     )
