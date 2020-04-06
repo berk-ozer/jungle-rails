@@ -30,5 +30,11 @@ RSpec.describe Product, type: :model do
       expect(subject).to_not be_valid
       expect(subject.errors.full_messages).to include "Price can't be blank"
     end
+
+    it "is not valid without a quantity" do
+      subject.quantity = nil
+      expect(subject).to_not be_valid
+      expect(subject.errors.full_messages).to include "Quantity can't be blank"
+    end
   end
 end
