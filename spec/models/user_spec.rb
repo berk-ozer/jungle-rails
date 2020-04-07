@@ -35,6 +35,12 @@ RSpec.describe User, type: :model do
       expect(subject.errors.full_messages).to include ("Email can't be blank")
     end
 
+    it "is not valid without pasword" do
+      subject.password = nil
+      expect(subject).to_not be_valid
+      expect(subject.errors.full_messages).to include ("Password can't be blank")
+    end
+
     it "is not valid when password and password_confirmation don't match" do
       subject.password_confirmation = "notsecret"
       expect(subject).to_not be_valid
