@@ -6,7 +6,7 @@ Welcome to the Jungle. Where weird is the new normal.
 
 Built with Rails 4.2, Jungle brings you an e-commerce experience like no other, transforming the way you think about online shopping. 
 
-## In Action
+## Final Product
 
 !["homepage"](docs/homepage.png)
 
