@@ -20,7 +20,7 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <% Category.all.each do |category| %>
+            <% Category.order(:name).all.each do |category| %>
               <li><%= link_to category.name, category %></li>
             <% end %>
           </ul>
