@@ -98,5 +98,11 @@ RSpec.describe User, type: :model do
       auth = User.authenticate_with_credentials(subject.email, "forgot")
       expect(auth).to eq nil
     end
+
+    it "authenticates when email contains whitespace around it" do
+      subject.save!
+      auth = User.authenticate_with_credentials("   " + subject.email + "  ", subject.password)
+      expect(auth).to eq subject
+    end
   end
 end
