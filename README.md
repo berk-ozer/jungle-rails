@@ -38,13 +38,13 @@ Authenticated admins can add/edit/delete products and categories.
 
 #### Product Selection
 
-Visitors can browse and add products to cart directly from the home page.
+Users can browse and add products to cart directly from the home page.
 
 Products can also be seen in their individual pages, or under their respective categories.
 
 #### Checkout
 
-Visitors can complete their purchase using Stripe, and see the details of their order.
+Users can complete their purchase using Stripe, and see the details of their order.
 
 ## Testing
 
@@ -70,7 +70,7 @@ This allowed for the learning of Rails while working to improve a project that w
 5. Create .env file based on .env.example
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server
+8. Run `bin/rails s -b 0.0.0.0` to start the server. The app will be served at http://localhost:3000
 
 ## Stripe Testing
 
